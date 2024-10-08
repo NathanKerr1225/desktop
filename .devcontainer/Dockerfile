@@ -24,7 +24,7 @@ SHELL ["/bin/bash", "-c"]
 
 RUN bash -c "$(curl -fsSL https://gef.blah.cat/sh)"
 
-RUN source <(curl -sL https://tjcsec.club/ghidra)
+RUN bash -c "$(curl -sL https://tjcsec.club/ghidra)"
 
 RUN usermod -s /bin/bash vscode
 
